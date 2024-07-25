@@ -1,19 +1,32 @@
 <div class="card edit">
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Edit Profile Details</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Home</button>
-              <button type="button" class="btn btn-primary">Complete Edit</button>
-            </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit Profile Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="text-center">
+          <img src="https://th.bing.com/th/id/OIP.hzIbAsJ_xX9L4TfdzxWGtQAAAA?w=171&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+            class="rounded" alt="...">
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <input required type="file" class="form-control" id="inputGroupFile02">
+            <label for="floatingInput">Profile Photo</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input required type="nickname" class="form-control" id="floatingInput" placeholder="Somebody@123">
+            <label for="floatingInput">Nickname</label>
+          </div>
+          <div class="form-floating">
+            <input required type="location" class="form-control" id="floatingInput" placeholder="Nairobi / 047">
+            <label for="floatingPassword">location</label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Complete Edit</button>
           </div>
         </div>
       </div>
+    </div>
   </div>

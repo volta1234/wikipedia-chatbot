@@ -1,4 +1,14 @@
-.navbar{
+.navbar {
     width: 200px !important;
     height: 580px !important;
+}
+
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 585px;
+    margin-left: 200px;
+    margin-top: -580px;
+    background-color: rgb(244, 244, 239);
 }
