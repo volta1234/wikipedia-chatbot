@@ -5,7 +5,7 @@ import { ChatHistoryComponent } from './pages/chat-history/chat-history.componen
 import { EditProfileComponent } from './pages/profile/edit-profile/edit-profile.component';
 import { AddProfileComponent } from './pages/profile/add-profile/add-profile.component';
 
-export const routes: Routes = [
+const routeConfig: Routes = [
     {
         path: "",
         component: HomeComponent,
@@ -32,3 +32,5 @@ export const routes: Routes = [
         title: "Edit Profile"
     }
 ];
+
+export default routeConfig;
