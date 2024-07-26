@@ -12,3 +12,15 @@
     margin-top: -580px;
     background-color: rgb(244, 244, 239);
 }
+
+img{
+    height: 80px;
+    width: 80px;
+}
+.img-thumbnail{
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+

@@ -4,6 +4,8 @@ import { ChatbotComponent } from './pages/chatbot/chatbot.component';
 import { ChatHistoryComponent } from './pages/chat-history/chat-history.component';
 import { EditProfileComponent } from './pages/profile/edit-profile/edit-profile.component';
 import { AddProfileComponent } from './pages/profile/add-profile/add-profile.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routeConfig: Routes = [
     {
@@ -30,6 +32,16 @@ const routeConfig: Routes = [
         path: "edit-profile",
         component: EditProfileComponent,
         title: "Edit Profile"
+    },
+    {
+        path: 'signup',
+        component: SignupComponent,
+        title: 'Signup'
+    },
+    {
+        path: 'login',
+        component: LoginComponent,
+        title: 'Login'
     }
 ];
 

@@ -1,9 +1,12 @@
 .home{
     margin-left: 200px;
-    margin-top: -580px !important;
+    margin-top: -587px !important;
 }
 
 img{
     width: 200px;
     height: 550px;
+}
+.welcome{
+    text-align: center;
 }
