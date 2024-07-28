@@ -1,3 +1,17 @@
 {
-    "users": []
+  "profiles": [
+    {
+      "id": "0",
+      "nickname": "JohnDoe",
+      "photo": "https://example.com/photo.jpg",
+      "location": "New York"
+    },
+    {
+      "id": "dd2a",
+      "nickname": "jet",
+      "photo": "C:\\fakepath\\motoren-test-2.jpg",
+      "location": "kilifi"
+    }
+  ],
+  "idCounter": 1
 }

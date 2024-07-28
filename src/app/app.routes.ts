@@ -6,6 +6,7 @@ import { EditProfileComponent } from './pages/profile/edit-profile/edit-profile.
 import { AddProfileComponent } from './pages/profile/add-profile/add-profile.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { LoginComponent } from './pages/login/login.component';
+import { AppComponent } from './app.component';
 
 const routeConfig: Routes = [
     {
@@ -42,7 +43,8 @@ const routeConfig: Routes = [
         path: 'login',
         component: LoginComponent,
         title: 'Login'
-    }
+    },
+    { path: 'profile/:id', component: AppComponent }
 ];
 
 export default routeConfig;

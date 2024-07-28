@@ -7,24 +7,27 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="text-center">
-          <img src="https://th.bing.com/th/id/OIP.hzIbAsJ_xX9L4TfdzxWGtQAAAA?w=171&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="rounded" alt="...">
+          <img src="https://th.bing.com/th/id/OIP.hzIbAsJ_xX9L4TfdzxWGtQAAAA?w=171&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+            class="rounded" alt="...">
         </div>
         <div class="modal-body">
-          <div class="form-floating mb-3">
-            <input required type="file" class="form-control" id="inputGroupFile02">
-            <label for="floatingInput">Profile Photo</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input required type="nickname" class="form-control" id="floatingInput" placeholder="Somebody@123">
-            <label for="floatingInput">Nickname</label>
-          </div>
-          <div class="form-floating">
-            <input required type="location" class="form-control" id="floatingInput" placeholder="Nairobi / 047">
-            <label for="floatingPassword">location</label>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Complete Profile</button>
-          </div>
+          <form (ngSubmit)="addProfile()" >
+            <div class="form-floating mb-3">
+              <input ngModel required type="file" class="form-control" [(ngModel)]="newProfile.photo" name="photo" id="inputGroupFile02">
+              <label for="floatingInput">Profile Photo</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input ngModel required type="nickname" class="form-control" [(ngModel)]="newProfile.nickname" name="nickname" id="floatingInput" placeholder="Somebody@123">
+              <label for="floatingInput">Nickname</label>
+            </div>
+            <div class="form-floating">
+              <input ngModel required type="location" class="form-control" [(ngModel)]="newProfile.location" name="location" id="floatingInput" placeholder="Nairobi / 047">
+              <label for="floatingPassword">location</label>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Complete Profile</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
